@@ -1,0 +1,7 @@
+test/
+src/
+.github/
+.git/
+webpack.config.js
+.babelrc
+.eslintrc.json
