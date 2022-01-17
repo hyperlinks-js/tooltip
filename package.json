@@ -1,6 +1,6 @@
 {
   "name": "@hyperlinks-js/tooltip",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "description": "Custom tooltip for Hyperlinks JS  library ",
   "browser": "dist/index.bundle.js",
   "module": "dist/index.bundle.js",

@@ -32,7 +32,10 @@ export const tooltipInit = (tipOption) => {
   })
 
   document.addEventListener('mouseout', function (e) {
-    if (e.target.classList.contains('hyperlinks')) { CURRENTTOOLTIP.tooltip.remove() }
+    if (e.target.classList.contains('hyperlinks')) {
+      CURRENTTOOLTIP.tooltip.remove()
+      document.getElementById('hyperlinks-style').remove()
+    }
   })
 
   const showTooltip = (elem) => {
@@ -52,7 +55,8 @@ export const tooltipInit = (tipOption) => {
     document.body.append(HYPERTOOLTIP)
     const HYPERSTYLE = document.createElement('style')
     HYPERSTYLE.innerHTML = TOOLTIP.getTooltipHTML().TEMPLATE
-    document.body.append(HYPERSTYLE)
+    HYPERSTYLE.id = 'hyperlinks-style'
+    document.head.append(HYPERSTYLE)
 
     // Tooltip positioning calculations start from here;
 
