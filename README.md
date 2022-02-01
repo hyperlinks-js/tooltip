@@ -1,2 +1,3 @@
 # Hyperlinks-tooltip
-Completed, only testing workflows.
+
+Deprecated... as it is been moved to core itself.... 
