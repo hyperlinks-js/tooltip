@@ -7,7 +7,7 @@ export const tooltipInit = (tipOption) => {
   }
 
   class Tooltip {
-    constructor (imageLink, description, heading, siteURL, tipOption) {
+    constructor(imageLink, description, heading, siteURL, tipOption) {
       this.imageLink = imageLink
       this.description = description
       this.heading = heading
@@ -15,7 +15,7 @@ export const tooltipInit = (tipOption) => {
       this.option = tipOption
     }
 
-    getTooltipHTML () {
+    getTooltipHTML() {
       const TEMPLATE_HTML = {
         all: `<div class=hyperlinks-container><div class=hyperlinks-img-container><img alt=temp-image src=${this.imageLink}></div><div class=hyperlinks-site-info-container><h2 class=hyperlinks-title>${this.heading}</h2><div class=hyperlinks-sub-title>${this.description}</div><div class=hyperlinks-site-url><span>${this.siteURL}</span></div></div></div>`
       }
